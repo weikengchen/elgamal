@@ -208,9 +208,6 @@ def find_prime(iNumBits, iConfidence):
 #encodes bytes to integers mod p.  reads bytes from file
 def encode(sPlaintext, iNumBits, p):
 		byte_array = bytearray(sPlaintext, 'utf-16')
-		q = (p - 1) // 2
-		qf = (q + 1) // 2
-
 		#z is the array of integers mod p
 		z = []
 
